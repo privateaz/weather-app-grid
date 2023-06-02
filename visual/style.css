@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300&display=swap');
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3d3c3c;
+}
+
+:root {
+  --dark-blue: #1D1D1D;  
+  --light-gray: #BFBFC1;
+}
+
+h2, h4 {
+  margin: 5px
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.iphone-container {
+  width: 350px;
+  height: 700px;
+  border-radius: 45px;
+  border: 20px solid #111 ;
+  background-color: var(--dark-blue);
+  position: relative;
+  color: #fff ;
+  text-align: center;
+  padding: 60px 10px 20px;
+}
+
+.iphone-container .notch {
+  width: 180px;
+  height: 25px;
+  background-color: #111;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 90px);
+}
+
+.iphone-container .iphone-menu {
+  width: 90px;
+  background-color: var(--light-gray);
+  height: 2px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 45px);
+}
+
+.iphone-container svg {
+  width: 100px;
+  height: 100px;
+  margin: 40px 0 20px;
+}
+
+.iphone-container .week-weather {
+  color: var(--light-gray);
+  margin-top: 60px;
+  padding: 0 20px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  grid-gap: 1rem;
+}
